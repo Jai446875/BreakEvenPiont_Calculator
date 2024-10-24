@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://pyscript.net/latest/pyscript.js"></script>
+    <title>Break-Even Point Calculator</title>
+</head>
+
+<body>
+
+    <h1>BEP Calculator</h1>
+
+
+    <div id="group">
+        <p>Enter your fixed cost </p>
+        <input type="text" id="fixedCost" name="fixedCost" placeholder="Fixed Cost"> </input>
+
+        <p>Enter your variable cost </p>
+        <input type="text" id="variableCost" name="variableCost" placeholder="Variable Cost"> </input>
+
+        <p>Enter your price per unit </p>
+        <input type="text" id="pricePerUnit" name="pricePerUnit" placeholder="Price Per Unit"> </input>
+    </div>
+
+    <button type="button" id="calculate">Calculate</button>
+
+    <div id="results">
+        <p>Your Break Even Point (Unit) is: <span id="bopSpan">N/A</span></p>
+    </div>
+
+    </br>
+    <canvas id="bepChart" width="600" height="500"></canvas>
+    
+    <img id="image" style="display: none;">
+
+    <py-script src="script.py"></py-script>
+    
+
+</body>
+</html>
